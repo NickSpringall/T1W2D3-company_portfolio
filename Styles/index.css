@@ -12,8 +12,10 @@ header {
   padding: 16px;
   text-align: center;
 }
-header .logo-name {
-  margin-bottom: 24px;
+@media screen and (max-width: 600px) {
+  header .logo-name {
+    margin-bottom: 50px;
+  }
 }
 header .logo-name .name {
   font-size: 20px;
@@ -35,6 +37,19 @@ header .nav-items a {
   color: #00a3d4;
 }
 
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  header .logo-name .name {
+    margin-bottom: 0px;
+  }
+  header .nav-items {
+    width: 50%;
+  }
+}
 footer {
   background-color: #ffb6b6;
   padding: 16px;
@@ -54,4 +69,12 @@ footer .info {
 }
 footer .info p {
   margin: 5px 0;
+}
+
+@media screen and (min-width: 600px) {
+  footer .social-media {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }/*# sourceMappingURL=index.css.map */
