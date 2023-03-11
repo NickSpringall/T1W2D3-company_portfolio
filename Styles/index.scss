@@ -1,12 +1,24 @@
+$primary-background: #ffb6b6;
+
+@mixin background-stuff() {
+    background-color: $primary-background;
+    padding: 16px;
+    text-align: center;
+}
+
 body {
     margin: 0;
     background-color: #a5a5a5;
+    min-height: 667px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 header {
-    background-color: #ffb6b6;
-    padding: 16px;
-    text-align: center;
+    @include background-stuff();
 
     .logo-name {
         margin-bottom: 24px;
@@ -14,7 +26,7 @@ header {
         .name {
             font-size: 20px;
             .coder-text {
-                color: #45a7c5
+                color: #45a7c5;
             }
             .academy-text {
                color: #1c3c5c;
@@ -29,8 +41,33 @@ header {
 
         a {
             text-decoration: none;
-            color: #00a3d4
+            color: #00a3d4;
         }
     }
 
+}
+
+footer {
+    @include background-stuff();
+
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+
+        margin-bottom: 24px;
+    
+        a{
+            i{
+                color: #1c3c5c;
+                font-size: 24px;
+            }
+        }
+    }
+        .info {
+        color: rgb(43, 40, 40);
+        
+        p {
+            margin: 5px 0;
+        }
+    }
 }
