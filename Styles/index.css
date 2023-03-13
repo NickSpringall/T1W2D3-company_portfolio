@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #a5a5a5;
-  min-height: 667px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,11 +14,11 @@ header {
 }
 @media screen and (max-width: 600px) {
   header .logo-name {
-    margin-bottom: 50px;
+    margin-bottom: 24px;
   }
 }
 header .logo-name .name {
-  font-size: 20px;
+  font-size: 28px;
 }
 header .logo-name .name .coder-text {
   color: #45a7c5;
@@ -29,7 +29,7 @@ header .logo-name .name .academy-text {
 header .nav-items {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-size: 18px;
 }
 header .nav-items a {
@@ -41,7 +41,7 @@ header .nav-items a {
   header {
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   header .logo-name .name {
     margin-bottom: 0px;
@@ -50,6 +50,11 @@ header .nav-items a {
     width: 50%;
   }
 }
+main section .jumbotron img {
+  height: 300px;
+  width: 100%;
+}
+
 footer {
   background-color: #ffb6b6;
   padding: 16px;
@@ -65,7 +70,7 @@ footer .social-media a i {
   font-size: 24px;
 }
 footer .info {
-  color: rgb(43, 40, 40);
+  color: rgb(41, 40, 40);
 }
 footer .info p {
   margin: 5px 0;
@@ -73,7 +78,7 @@ footer .info p {
 
 @media screen and (min-width: 600px) {
   footer .social-media {
-    width: 20%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
   }

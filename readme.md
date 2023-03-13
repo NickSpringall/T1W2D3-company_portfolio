@@ -7,7 +7,7 @@ This is a portfolio website for displaying the services that coder academy provi
 
 ### Header
 Header has logo and name of the company along with the navigation bar. Here is the code for the header we have: 
-''' html
+```html
  <header>
     <div class="logo-name">
         <a href="./index.html">
@@ -24,12 +24,13 @@ Header has logo and name of the company along with the navigation bar. Here is t
         <a href="./pages//services.html">Contact</a>
     </nav>
     </header>
-'''
+    
+```
 
 ### Footer 
 Footer has social media links, contact number and address. Here is the code
 
-'''html
+```html
 <div class="social-media">
                 <a href="">
                     <i class="fa-brands fa-github"></i>
@@ -46,14 +47,14 @@ Footer has social media links, contact number and address. Here is the code
             <p>Address: 1 street st, Suburb</p>
         
         </div>
-'''
+```
 
 ## Pages
 
 ### Home
 Home page, for now, just displays some lorem ipsum text. Here is the code that we have used: 
 
-'''html
+```html
 <section>
     <div class="jumbotron">
         <img src="./images/jumbotron.webp">
@@ -65,4 +66,4 @@ Home page, for now, just displays some lorem ipsum text. Here is the code that w
     </div>
 
 </section>
-'''
+```
